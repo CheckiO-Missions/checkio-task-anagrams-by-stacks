@@ -126,38 +126,77 @@ fieldset[disabled] .btn {
     box-shadow: none;
 }
 
-.tryit-content input[type="text"],
-.tryit-content input[type="number"]
-{
-    display: inline-block;
-    padding: 4px 6px;
+
+
+.tryit-content .tooltip{
+    text-align: center;
     font-size: 14px;
-    line-height: 1.428571429;
-    font-family: inherit;
     color: #294270;
-    vertical-align: middle;
+}
+
+.tryit-content .checkio-result{
+    font-size: 16px;
+    text-align: center;
+    color: #294270;
+    width: 160px;
+    word-break: break-all;
+}
+
+.tryit-content .word {
+    width: 100px;
+    text-align: center;
+}
+.tryit-content input[type=text] {
+    color: #294270;
+    font-family: Verdana;
+    font-size: 16px;
     background-color: #ffffff;
-    border: 1px solid #cccccc;
-    border-radius: 4px;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-    -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
-    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
-}
+    border: 1px solid rgba(255, 0, 0, 0.5);
+    /*-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);*/
+    /*-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);*/
+    /*box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);*/
+    -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+    transition: border linear 0.2s, box-shadow linear 0.2s;
 
-.tryit-content input[type="text"]:focus,
-.tryit-content input[type="number"]:focus{
-    border-color: rgba(82, 168, 236, 0.8);
     outline: 0;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+    outline: thin dotted \9;
+    /* IE6-9 */
+
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.5);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.5);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.5);
 }
 
-.tryit-content input[type="text"][disabled],
-.tryit-content input[type="number"][readonly]{
-    cursor: not-allowed;
-    background-color: #eeeeee;
+/*.tryit-content input[type=text]:focus.correct,*/
+/*.tryit-content input[type=text]:focus {*/
+    /*border-color: rgba(82, 168, 236, 0.8);*/
+    /*outline: 0;*/
+    /*outline: thin dotted \9;*/
+    /* IE6-9 */
+
+    /*-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);*/
+    /*-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);*/
+    /*box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);*/
+/*}*/
+
+.tryit-content .word {
+    width: 100px;
+    text-align: center;
 }
 
-/* Your CSS */
-/*          */
+.tryit-content input.correct {
+    border-color: rgba(0, 128, 0, 0.5);
+    outline: 0;
+    outline: thin dotted \9;
+    /* IE6-9 */
+
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 128, 0, 0.5);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 128, 0, 0.5);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 128, 0, 0.5);
+}
+
+.tryit-content .checkio-result-err {
+    color: red;
+}

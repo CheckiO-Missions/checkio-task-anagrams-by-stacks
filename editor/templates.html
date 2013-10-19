@@ -1,9 +1,9 @@
 <script type="text/template" id="template_animation">
     <div class="animation-content center-exp">
         <div class="output"></div>
-        <div class="explanation center-exp"></div>
         <div class="answer"></div>
-        <div class="call"></div>
+        <div class="explanation center-exp"></div>
+        <div class="call"><span class="call-result"></span></div>
     </div>
 </script>
 
@@ -11,18 +11,32 @@
     <div class="tryit-content center-exp">
         <table class="tool">
             <tr>
-                <td>
-                    <input type="text" value="test">
-                </td>
-                <td>
-                    <button class="bn-check btn">Action</button>
+                <td class="tooltip" colspan="4">
+                    Enter anagrams
                 </td>
             </tr>
             <tr>
-                <td colspan="2" class="checkio-result">
-                    Result:<br>
-                    <span class="checkio-result-in">&nbsp;</span>
+                <td>
+                    <input type="text" class="first-word word correct" value="rice" maxlength="8">
                 </td>
+                <td> - </td>
+                <td>
+                    <input type="text" class="second-word word correct" value="cire" maxlength="8">
+                </td>
+                <td>
+                    <input type="button" class="bn-check btn" value="Find">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4" class="checkio-result">
+                    <span class="checkio-result-in">&nbsp;</span>
+                    <br>
+                    <span class="checkio-result-err"></span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4" span="2" class="tryit-canvas"></td>
+
             </tr>
 
         </table>
