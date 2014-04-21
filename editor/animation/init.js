@@ -157,8 +157,8 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210'],
             var cellN = startWord.length;
             var padding = cellSize / 2;
 
-            var delay = 400;
-            var stepDelay = delay * 1.1;
+            var delay = 500;
+            var stepDelay = delay * 1.5;
 
             var outX = zx + (cellN + 1.5) * cellSize;
             var rowY = [
