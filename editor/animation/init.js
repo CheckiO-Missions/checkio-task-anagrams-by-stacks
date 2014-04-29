@@ -127,7 +127,6 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210'],
 
 
             $tryit.find('.bn-check').click(function (e) {
-                e.preventDefault();
                 var first = $tryit.find(".first-word").val();
                 var second = $tryit.find(".second-word").val();
                 $tryit.find(".checkio-result-err").html("");
@@ -142,6 +141,7 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210'],
                 }
                 tdata = first + "-" + second;
                 this_e.sendToConsoleCheckiO(tdata);
+                e.stopPropagation();
                 return false;
             });
 
