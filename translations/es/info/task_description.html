@@ -1,0 +1,26 @@
+<p>Se te han asignado dos anagramas como cadenas (str), separados por un gui&oacute;n. Deber&aacute;s reordenar las letras para convertir la primera palabra en la segunda, usando dos pilas (stacks) y un buffer de una letra. La primera pila es el comienzo de una palabra y la segunda pila es donde pondr&aacute;s el anagrama. La palabra se coloca en la pila, letra por letra. La primera letra del anagrama se coloca en la pila inferior y la &uacute;ltima letra en la pila del medio, hasta que se utilice para el final del anagrama.</p>
+
+<p>Deber&aacute;s encontrar la secuencia de acciones m&aacute;s corta, para mover y convertir la palabra (de primera pila) en el anagrama (de la segunda). La primera pila se etiqueta 1, la segunda se etiqueta 2, y el buffer es 0. La acci&oacute;n se escribe como una cadena de dos n&uacute;meros que significan la ubicaci&oacute;n original de la letra y la nueva ubicaci&oacute;n. Por ejemplo: 12 significa que de la primera pila, tomamos la &uacute;ltima letra y la colocamos al final de la segunda pila. Para la respuesta, deber&aacute;s regresar una cadena (str) que enlista los pasos, separados por comas.</p>
+
+<p style="text-align: center;"><img alt="anagrams_by_stacks" class="for_info_only" src="{{ MEDIA }}anagrams_by_stacks.png" title="anagrams_by_stacks" width="600px" /> <img alt="anagrams_by_stacks" class="for_editor_only" src="{{ MEDIA }}anagrams_by_stacks.png" title="anagrams_by_stacks" width="380px" /></p>
+
+<p><strong>Datos de Entrada: </strong> Dos palabras separadas por gui&oacute;n, como una cadena (str).</p>
+
+<p><strong>Salida: </strong> La secuencia de acciones como una cadena (str).</p>
+
+<div class="for_info_only">
+<p><strong>Ejemplo:</strong></p>
+
+<pre class="brush: python">
+checkio(&quot;rice-cire&quot;) == &quot;10,12,12,12,02&quot;
+checkio(&quot;tort-trot&quot;) == &quot;12,12,12,12&quot;
+checkio(&quot;hello-holle&quot;) == &quot;12,12,12,12,10,21,21,21,21,02,12,12,12,12&quot;
+checkio(&quot;anagram-mragana&quot;) == &quot;12,10,12,02,12,12,12,12&quot;
+checkio(&quot;mirror-mirorr&quot;) == &quot;12,12,10,12,12,02,10,21,21,21,21,21,02,12,12,12,10,21,21,21,02,12,12,12,12&quot;
+#Pueden resolverse de muchas maneras.</pre>
+</div>
+
+<p class="for_info_only"><strong>&iquest;C&oacute;mo se usa?: </strong> Aqu&iacute; puedes jugar con las pilas (stack) y ver c&oacute;mo funcionan en los juegos. Es posible ver pilas en la vida cotidiana. Est&aacute;n en los libros de nuestra biblioteca, y las hojas de papel en blanco en nuestra bandeja de la impresora.</p>
+
+<p><strong>Condiciones:</strong> 1 &le; |palabra| &lt; 10<br />
+Las palabras contienen s&oacute;lo letras ASCII en min&uacute;sculas.</p>
